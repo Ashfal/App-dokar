@@ -11,7 +11,6 @@ import android.support.v4.view.PagerAdapter;
 
 public class TabPageAdapter extends FragmentPagerAdapter {
     public static int PAGE_COUNT = 4;
-    private String judultab[] = new String[] {"Satu Fragment","Dua Fragment","Tiga Fragment","Empat Fragment"};
     public TabPageAdapter (FragmentManager fm ) {super(fm);};
 
     @Override
@@ -38,9 +37,7 @@ public class TabPageAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return judultab[position];
+        return super.getPageTitle(position);
     }
-
-
 
 }

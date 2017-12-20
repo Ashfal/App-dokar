@@ -16,7 +16,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
-                android:elevation="0dp"
+                android:elevation="5dp"
 
                 android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
@@ -30,7 +30,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:tabSelectedTextColor="@color/white"
-                app:tabTextColor="@color/grey">
+                app:tabIndicatorHeight="3dp"
+                app:tabTextColor="@color/white">
 
                 <android.support.design.widget.TabItem
                     android:id="@+id/home"
@@ -42,19 +43,19 @@
                     android:id="@+id/group"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:icon="@drawable/ic_group"/>
+                    android:icon="@drawable/ic_group" />
 
                 <android.support.design.widget.TabItem
                     android:id="@+id/profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:icon="@drawable/ic_account"/>
+                    android:icon="@drawable/ic_account" />
 
                 <android.support.design.widget.TabItem
                     android:id="@+id/setting"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:icon="@drawable/ic_setting"/>
+                    android:icon="@drawable/ic_setting" />
 
             </android.support.design.widget.TabLayout>
 
